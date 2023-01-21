@@ -1,6 +1,6 @@
 /*
   mitsubishi2mqtt - Mitsubishi Heat Pump to MQTT control for Home Assistant.
-  Copyright (c) 2019 gysmo38, dzungpv, shampeon, endeavour, jascdk, chrdavis, alekslyse.  All right reserved.
+  Copyright (c) 2022 gysmo38, dzungpv, shampeon, endeavour, jascdk, chrdavis, alekslyse.  All right reserved.
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
   License as published by the Free Software Foundation; either
@@ -92,10 +92,16 @@ const char html_page_others[] PROGMEM =
                 "autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' "
                 "placeholder=' ' value='_HAA_TOPIC_'>"
             "</p>"
-            "<p><b>_TXT_OTHERS_DEBUG_</b>"
-                "<select name='Debug'>"
-                    "<option value='ON' _DEBUG_ON_>_TXT_F_ON_</option>"
-                    "<option value='OFF' _DEBUG_OFF_>_TXT_F_OFF_</option>"
+            "<p><b>_TXT_OTHERS_DEBUG_LOGS_</b>"
+                "<select name='DebugLogs'>"
+                    "<option value='ON' _DEBUG_LOGS_ON_>_TXT_F_ON_</option>"
+                    "<option value='OFF' _DEBUG_LOGS_OFF_>_TXT_F_OFF_</option>"
+                "</select>"
+            "</p>"
+            "<p><b>_TXT_OTHERS_DEBUG_PCKTS_</b>"
+                "<select name='DebugPckts'>"
+                    "<option value='ON' _DEBUG_PCKTS_ON_>_TXT_F_ON_</option>"
+                    "<option value='OFF' _DEBUG_PCKTS_OFF_>_TXT_F_OFF_</option>"
                 "</select>"
             "</p>"
             "<br/>"
