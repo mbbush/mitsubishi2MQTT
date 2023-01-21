@@ -90,8 +90,8 @@ String login_password;
 bool _debugMode = false;
 
 // Customization
-uint8_t min_temp                    = 16; // Minimum temperature, in your selected unit, check value from heatpump remote control
-uint8_t max_temp                    = 31; // Maximum temperature, in your selected unit, check value from heatpump remote control
+uint8_t min_temp                    = 50; // Minimum temperature, in your selected unit, check value from heatpump remote control
+uint8_t max_temp                    = 88; // Maximum temperature, in your selected unit, check value from heatpump remote control
 String temp_step                   = "1"; // Temperature setting step, check value from heatpump remote control
 
 // sketch settings
@@ -102,6 +102,6 @@ const PROGMEM uint32_t HP_MAX_RETRIES = 10; // Double the interval between retri
 // Default values give a final retry interval of 1000ms * 2^10, which is 1024 seconds, about 17 minutes. 
 
 // temp settings
-bool useFahrenheit = false;
+bool useFahrenheit = true;
 // support heat mode settings, some model do not support heat mode
 bool supportHeatMode = true;
